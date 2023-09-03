@@ -1,0 +1,219 @@
+<html>
+<head>
+          <title>SweetCafe</title>
+          <link rel="stylesheet" type="text/css" href="CSS\style.css">
+          <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet"> 
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.body{
+     font-size: 20px;
+     overflow-x: hidden;
+     color: white;
+     font-family: 'Flamenco', cursive;
+}
+
+.zoom
+{
+transition:transform 0.5s;
+}
+.zoom:hover
+{
+transform:scale(1.2);
+}
+
+
+header{
+     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/header.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 100vh;
+}
+
+.clearfix:after{ 
+     content: ".";
+     visibility: hidden;
+     display: block;
+     height: 0px;
+     clear: both;
+
+}
+
+
+.row{
+     max-width: 1180px;
+     margin: 0 auto;
+
+}
+
+.logo{
+        height: 300px;       
+        width: auto;
+        float: left;
+        margin-top: 20px;
+}
+
+.main-nav{
+      float: right;
+      margin-top: 60px;
+
+}
+
+.main-nav li{
+       display: inline-block;
+       list-style: none;
+       margin-left: 40px;
+
+}
+
+.main-nav li a{
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100px;
+}
+
+.main-nav li a:hover{
+     border-bottom: 2px solid #bf55ec;
+
+}
+
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    /*border: 1px solid red;*/ 
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	height:auto;
+
+}
+
+h1{
+   color: #fff;
+   font-size: 240%;
+   word-spacing: 5px;
+   letter-spacing: 3px;
+   margin-bottom: 20px;
+   text-transform: uppercase;
+   font-weight: lighter;
+
+}
+
+.btn{
+   display: inline-block;
+   padding: 10px 30px;
+   font-weight: lighter;
+   text-decoration: none;
+   text-transform: uppercase;
+   border-radius: 200px;
+   transition: background-color 0.2s, border 0.2s, color 0.2; 
+
+}
+
+.btn-full{
+      background-color: transparent;
+      color: #bf55ec;
+      margin-right: 15px;
+      border: 1px solid #bf55ec;
+}
+.btn-full:hover{
+    background-color: #fff;
+}
+
+.btn-nav{
+       background-color: transparent;
+       color: #fff;
+       border: 1px solid #fff;
+}
+
+.btn-nav:hover{
+      background-color: #bf55ec;
+}
+
+.colorchange{
+     animation: colorchangesweet 1s infinite;
+}
+
+@keyframes colorchangesweet {
+     0%{color: red;}
+     25%{color: #bf55ec;}
+     50%{color: white;}
+     100%{color: #bf55ec;}
+
+     
+}
+
+
+/*///////////////////responsive queries//////////////*/
+
+@media only screen and (max-width: 1180px){
+   .main-content-header{
+        width:100%;
+        padding:0 2%;
+}
+
+
+
+
+</style>
+</head>
+<body>
+    
+<header>
+      <nav>
+           <div class="row clearfix">
+                <img src="img\logo.png" class="logo">
+                    <ul class="main-nav animated rotateln">
+                          <li><a href="#">home</a></li>
+                          <li><a href="contact\contact.html">Contact us</a></li>
+                          <li><a href="aboutpage\about.html">About Us</a></li>             
+                          <li><a href="logingpage/login.html">Sign up</a></li>
+                    </ul>
+           </div>
+ 
+      </nav>
+
+     <div class="main-content-header">
+     <h1>WELCOME TO <span class="colorchange">SWEET CAFE</span>.<br> 
+         HOUSE OF CAKE LOVER OO YES. </h1>
+
+       <a href="#" class="btn btn-full">click to order</a>
+       <a href="#" class="btn btn-nav">show me more</a>
+      </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<table border="0" width=100%>
+<tr>
+<td class="zoom"><img src="img\c1.png" align="center" width="63%" height="200px"></td>
+<td class="zoom"><img src="img\c2.png" align="center" width="63%" height="200px"></td>
+<td class="zoom"><img src="img\c3.png" align="center" width="63%" height="200px"></td>
+<td class="zoom"><img src="img\c4.png" align="center" width="63%" height="200px"></td>
+</td>
+</tr>
+
+          
+          
+</header>
+       
+
+ 
+</body>
+</html>
